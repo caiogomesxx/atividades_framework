@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>carinho de compras</title>
+    <style>
+        td { text-align :center}
+    </style>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <h2>Carrinho de Compras</h2>
+    Selecione os produtos
+    
+    <select id="produtos">
+        <option value="5000.00">iPhone x R$5000,00</option>
+        <option value="6000.00">iPhone 11 R$6000,00</option>
+        <option value="9000.00">iPhone 12 R$9000,00</option>
+    </select>
+
+    Quantidade
+    <input type="text" id="qtd" size="3" />
+    <p></p>
+    <button id="btnAdd" onclick="addToCart()" >Adicionar ao carrinho</button>
+
+    <p></p>
+    <table id="carrinho"  style="visibility:hidden; width:100%">
+         <thead>
+              <tr>
+                  <th>Produto</th>
+                  <th>Preço</th>
+                  <th>Quantidade</th>
+                  <th>Total</th>
+                  <th></th>
+             </tr>
+         </thead>
+         <tbody id="carrinho1">
+
+         </tbody>
+    </table>
+   
+    
+<script src="js/index.js"></script>
+
+</body>
+</html>
